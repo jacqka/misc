@@ -217,7 +217,7 @@ int main(int argc, char *argv[]){
 						if (d->d_type == DT_DIR)
 						{ 			new_thread(thread_two);}
 
-								calloc(re, sizeof(re));
+								memset(re, 0, sizeof(re));
 							
 										memset(&re-re, d->d_name, sizeof(d->d_name));
 			
