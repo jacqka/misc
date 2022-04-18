@@ -30,11 +30,11 @@ int main(int argc, char *argv[]){
 				new = 1;		
 		}
 		
-	memset(&disk, 0, sizeof(disk));
+	memset(&mnt.blk_name, 0, sizeof(disk));
 		
 		if(!new){
 			
-			mnt.blk_name = disk; 
+			memset(mnt.blk_name, disk, sizeof(mnt.blk_name)); 
 						
 				}
 			
