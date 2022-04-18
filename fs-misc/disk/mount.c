@@ -34,7 +34,7 @@ int main(int argc, char *argv[]){
 		
 		if(!new){
 			
-			memset(mnt.blk_name, disk, sizeof(mnt.blk_name)); 
+			memset((char *)&mnt.blk_name, disk, sizeof(mnt.blk_name)); 
 						
 				}
 			
