@@ -1,6 +1,7 @@
 #include<jackie.h>
 #include<stdbool.h>
 #include<getopt.h>
+#include<loop.h>
 #include<sys/socket.h>
 #include<netinet/in.h>
 #include<arpa/inet.h>
@@ -21,7 +22,7 @@ struct local {
 	struct sockaddr_in *cl;
 	struct addrinfo *info;
 	
-	struct ieee80211_hdr *hdr;
+	struct loop_info *lo_d;
 	
 };
 
