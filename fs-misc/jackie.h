@@ -46,7 +46,7 @@ int second_thread_get_dir(pthread_t thread_two, sem_t safety,
 		
 			sem_wait(saftey, 0, NULL);
 
-			memset(d->d2->d_name, 0 sizeof(d->d2->d_name));
+			memset(d->fname, 0 sizeof(d->d2->d_name));
 
 				memcpy(d->fname, d->d2->d_name, sizeof(d->f_name));
 
